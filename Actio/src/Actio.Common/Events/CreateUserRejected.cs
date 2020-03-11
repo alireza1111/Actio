@@ -1,7 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Actio.Common.Events
 {
     public class CreateUserRejected : IRejectedEvent
@@ -14,7 +10,8 @@ namespace Actio.Common.Events
         {
         }
 
-        public CreateUserRejected(string email, string reason, string code)
+        public CreateUserRejected(string email, 
+            string reason, string code)
         {
             Email = email;
             Reason = reason;

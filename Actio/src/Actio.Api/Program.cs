@@ -1,12 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Actio.Common.Events;
 using Actio.Common.Services;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 namespace Actio.Api
@@ -17,11 +18,9 @@ namespace Actio.Api
         {
             ServiceHost.Create<Startup>(args)
                 .UseRabbitMq()
-                .SubscribeToEvent<ActivityCreated>()  //can add many subscriptions
+                .SubscribeToEvent<ActivityCreated>()
                 .Build()
                 .Run();
         }
-
-
     }
 }

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System;
 
 namespace Actio.Common.Events
 {
-    public interface IAuthenticatedEvent: IEvent
+    public interface IAuthenticatedEvent : IEvent
     {
-        Guid UserId { get; }
+         Guid UserId { get; }
     }
 }

@@ -1,11 +1,8 @@
-﻿using RawRabbit.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using RawRabbit.Configuration;
 
 namespace Actio.Common.RabbitMq
 {
-    public class RabbitMQOptions : RawRabbitConfiguration
+    public class RabbitMqOptions : RawRabbitConfiguration
     {
     }
 }

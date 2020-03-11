@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System;
 
 namespace Actio.Common.Commands
 {
-    public interface IAuthenticatedCommand: ICommand
+    public interface IAuthenticatedCommand : ICommand
     {
-        Guid UserId { get; set; }
+         Guid UserId { get; set; }
     }
 }
