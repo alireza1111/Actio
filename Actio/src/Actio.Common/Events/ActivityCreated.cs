@@ -13,11 +13,12 @@ namespace Actio.Common.Events
         public string Descripton { get;  }
         public DateTime CreatedAt { get;  }
 
-        public ActivityCreated(Guid id, Guid userId, string category)
+        public ActivityCreated(Guid id, Guid userId, string category, string name)
         {
             Id = id;
             UserId = userId;
             Category = category;
+            Name = name;
         }
 
         protected ActivityCreated()
